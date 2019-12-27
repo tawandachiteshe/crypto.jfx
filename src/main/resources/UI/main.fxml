@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.svg.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #373737;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dickensdev.cryptojfx.controller.mainController">
+   <children>
+      <JFXListView fx:id="listView" layoutX="431.0" prefHeight="600.0" prefWidth="381.0" />
+      <Label fx:id="coinName" layoutX="38.0" layoutY="551.0" text="Bitcoin" textFill="#2aff05">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="300.0" text="Price:" textFill="#2aff05">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="329.0" text="Change:" textFill="#2aff05">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="360.0" text="Change in hour:" textFill="#2aff05">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="391.0" text="Change in week:" textFill="#2aff05">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label fx:id="price" layoutX="244.0" layoutY="300.0" text="1213" textFill="#2aff05">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label fx:id="change" layoutX="244.0" layoutY="329.0" prefHeight="18.0" prefWidth="54.0" text="0.2121" textFill="#2aff05">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label fx:id="change1" layoutX="244.0" layoutY="360.0" prefHeight="18.0" prefWidth="54.0" text="0.2112" textFill="#2aff05">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label fx:id="change7" layoutX="244.0" layoutY="391.0" prefHeight="18.0" prefWidth="54.0" text="0.214" textFill="#2aff05">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label fx:id="symbol" layoutX="139.0" layoutY="69.0" text="BTH" textFill="#2aff05">
+         <effect>
+            <Bloom />
+         </effect>
+         <font>
+            <Font name="Consolas" size="96.0" />
+         </font>
+      </Label>
+      <SVGGlyph fx:id="da" layoutX="33.0" layoutY="69.0" />
+      <JFXButton fx:id="refreshBtn" layoutX="307.0" layoutY="550.0" onAction="#onRefresh" style="-fx-background-color: #2aff05;" text="refresh">
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
